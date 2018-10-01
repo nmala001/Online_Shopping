@@ -10,18 +10,19 @@
   <properties>
   
   	<javaee.version>7.0</javaee.version>
+  	<spring.version>4.3.6.RELEASE</spring.version>
   
    </properties>
   <dependencies>
   
   <!--JAVA EE API  -->
   <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
-<dependency>
-    <groupId>javax</groupId>
-    <artifactId>javaee-api</artifactId>
-    <version>${javaee.version}</version>
-    <scope>provided</scope>
-</dependency>
+	<dependency>
+	    <groupId>javax</groupId>
+	    <artifactId>javaee-api</artifactId>
+	    <version>${javaee.version}</version>
+	    <scope>provided</scope>
+	</dependency>
   
     <dependency>
       <groupId>junit</groupId>
@@ -29,6 +30,15 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+    <!--Spring dependency  -->
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+    
   </dependencies>
   <build>
   <plugins>
