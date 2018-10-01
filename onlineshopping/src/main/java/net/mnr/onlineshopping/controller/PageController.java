@@ -13,6 +13,7 @@ public class PageController {
 	public ModelAndView index() {
 		
 		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("greeting", "Welcome To The Online Shopping Cart");
 		
 		return mv;
 	}
